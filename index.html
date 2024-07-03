@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>TexWolrd</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="inicioBtn">INICIO</li>
+                <li id="productosBtn">
+                    <a href="#sectionP">PRODUCTOS</a>
+                </li>
+                <li id="nosotrosBtn">                    
+                    <a href="#sectionN">NOSOTROS</a>
+                </li>
+                <li id="contactoBtn">                    
+                    <a href="#sectionC">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="banner section">
+            <img src="./img/logo.png" alt="">
+        </section>
+        
+        <section id="sectionP" class="products section">
+            <h1>productos</h1>
+            <section class="listaProducts">
+                <section data-aos="fade-up" class="card">
+                    <div>
+                        <img src="./img/Producto1.png" alt="">
+                    </div>
+                    <h2>Nombre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sed!</p>
+                </section>
+                <section data-aos="fade-up" class="card">
+                    <div>
+                        <img src="./img/Producto2.png" alt="">
+                    </div>
+                    <h2>Nombre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, harum!</p>
+                </section>
+                <section data-aos="fade-up" class="card">
+                    <div>
+                        <img src="./img/Producto3.png" alt="">
+                    </div>
+                    <h2>Nombre</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis!</p>
+                </section>
+            </section>
+        </section>
+        <section class="nosotros section">
+          <div class="imgNos"></div>
+          <section class="article" id="sectionN">
+                <h1>nosotros</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cupiditate fuga iure eum consequuntur quo inventore cum odio beatae reiciendis quae, dolorem voluptatem! Laboriosam neque atque repellendus vero repellat delectus, possimus laudantium nam recusandae provident a temporibus veritatis porro ea. Nihil minus commodi iure at maiores architecto. Quidem, voluptatum nulla!</p>
+            </section>
+        </section>
+        <section class="vision section">
+          <section class="article">
+            <h1>vision</h1>
+            <p>Convertirnos en la marca líder a nivel nacional e internacional en el sector de la marroquinería, reconocida por nuestro compromiso con la calidad, la creatividad en el diseño y la ética empresarial. Buscamos expandir nuestra presencia global manteniendo nuestro enfoque en la innovación continua y en la satisfacción del cliente.
+            </p>
+          </section>
+          <section class="imgVision"></section>
+        </section>
+        <section class="mision section">
+            <h1>mision</h1>
+            <p>Producir y ofrecer productos de marroquinería de alta calidad que combinen diseño innovador, funcionalidad y durabilidad. Nos comprometemos a satisfacer las necesidades y preferencias de nuestros clientes, garantizando estándares de excelencia en cada producto que lleva el sello de TexWorld.</p>
+        </section>
+        <section class="contacto section" id="sectionC">
+            <h1>CONTACTANOS</h1>
+            <p>Si tenes alguna consulta, dejanos tu comentario</p>
+            <section>
+                <form id="formulario" autocomplete="off">
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="email" id="correo" placeholder="Correo electrónico">
+                    <input id="comentario" placeholder="Comentarios">
+                    <button  id="btnSend" type="button" onclick="enviarCorreo()">Enviar</button>
+                </form> 
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        Copyright 2024 © TexWorld
+    </footer>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "JGRrx3KjEBmXeJMsb",
+            });
+        })();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

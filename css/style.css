@@ -1,0 +1,252 @@
+:root{
+    --black: #000000;
+    --dark-blue: #000a22;
+    --gray: #9f9f9f;
+    --white: #FFFFFF;
+    --yellow: #B87900;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--black);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend', 'Helvetica';
+    width: 100%;
+}
+
+h1{
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 60px;
+
+}
+
+p{
+    font-family: 'Lexend';
+    font-weight: 190;
+    line-height: 2;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--gray)
+}
+header{
+    background-color: var(--dark-blue);
+    color: var(--gray);
+    font-family: "Bodoni Moda SC", serif;
+}
+
+header ul{
+    height: 10vh;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+#inicioBtn:hover, #productosBtn a:hover, #nosotrosBtn a:hover, #contactoBtn a:hover{
+    transition: 500ms;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.section{
+    min-height: 90vh;
+    display: flex;
+}
+
+.banner{
+    background-image: url("../img/Section1.png");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    width: 60%;
+}
+
+.products{
+    background-color: var(--yellow);
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listaProducts{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card div{
+    background-color: var(--white);
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.card div img{
+    height: 130px;
+    width: 200px;
+}
+
+.card p{
+    width: 270px;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+.nosotros .imgNos{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url("../img/Section3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.article{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    background-color: #AAA395;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 35px;
+    
+}
+
+
+.vision{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.vision .imgVision{
+    min-height: 90vh;
+    background-image: url("../img/SectionV.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.vision section{
+    display: flex;
+    background-color: var(--black);
+    color: var(--white);
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 35px;
+}
+
+.mision{
+    background-image: url("../img/SectionM.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 35px;
+    text-align: center;
+}
+
+
+.contacto{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto h1{
+    font-size: 30px;
+}
+
+form{
+    width: 70vw;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border: none;
+    padding: 1px;
+    background: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: var(--white);
+}
+
+.contacto button{
+    width: 30vh;
+    border-radius: 10px;
+    height: 40px;
+    background-color: var(--yellow);
+    border: none;
+}
+
+.contacto button:hover{
+    width: 30vh;
+    border-radius: 10px;
+    height: 40px;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: 800ms;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Lexend';
+    font-weight: 190;
+    letter-spacing: 2px;
+}
